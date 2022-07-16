@@ -1,0 +1,210 @@
+/* 추가 css */
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 10;
+}
+
+/* Logo */
+header > h1 {
+  height: 70px;
+  text-align: center;
+}
+header > h1 > a img {
+  width: 200px;
+  height: auto;
+  padding: 15px 0 0 50px;
+}
+
+/* Main menu */
+.menu_wrap .dep1 {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  line-height: 70px;
+}
+.menu_wrap .dep1 > li {
+  width:150px;
+  text-align: center;
+  vertical-align: top;
+}
+.menu_wrap .dep1 > li:hover {
+  font-weight: bold;
+  z-index: 10;
+}
+.menu_wrap .dep1 > li > a {
+  display: block;
+  color: #000E0E;
+}
+
+.menu_wrap .dep1 > li > a:hover {
+  background-color:#000E0E;
+  color: #fff;
+  transition: all 0.5s;
+}
+.menu_wrap .dep1 > li:hover > .dep2 {
+  display: block;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.menu_wrap .dep1 > li:hover > .dep2 > li {
+  line-height: 20px;
+}
+.menu_wrap .dep1 > li:hover > .dep2 > li a {
+  color: #000E0E;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.menu_wrap .dep1 > li:hover .dep2 > li:hover a {
+  color: purple;
+  font-weight: bold;
+}
+
+/* Sub menu */
+.menu_wrap .dep2 {
+  display: none;
+}
+.menu_wrap .dep2 li {
+  padding: 7px 0;
+}
+
+/* Social */
+header .social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .social > img {
+  width: 40px;
+  margin-right: 40px;
+}
+
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+header .social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .social > img {
+  width: 40px;
+  margin-right: 40px;
+}
+
+
+
+/* business phil&mission */
+.mission-text {
+  font-weight: 600;
+  font-style: oblique;
+  color: dimgrey;
+}
+
+.customer-text {
+  text-align: center;
+  color: dimgrey;
+}
+.customer-text:hover {
+  text-decoration: none;
+}
+
+#padding-bottom {
+  padding-bottom: 1.5rem !important;
+}
+/* #equip-margin-top {
+  margin-top: 3rem;
+}
+#equip-margin-bottom {
+  margin-bottom: 1.5rem;
+} */
+/* .img-fluid a:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+} */
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color:#fff;
+  padding: 30px 50px;
+}
+.footer1 > h1 > a img {
+  width: 150px;
+  height: auto;
+  padding: 30px 0;
+}
+.footer1 > p {
+  color: black;
+  /* font-size: 1.2em; */
+  padding: 10px;
+}
+.footer1 > ul > li {
+  color: black;
+  font-size: 12px;
+}
+.footer1 > ul > li img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+.footer-menu > div > p {
+  color: #8D8DAA;
+  width: 170px;
+  height: 20px;
+  /* font-size: 1.2em; */
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.robot {
+  display: block;
+  width: 170px;
+  text-align: center;
+  padding-top: 10px;
+  color: #D1D1D1;
+}
+.robot:hover {
+  color: purple;
+  font-weight: bold;
+  cursor: pointer;
+}
+.footer-social > a img {
+  width: 30px;
+  height: 30px;
+}
+.footer-social > a img:hover {
+  cursor: pointer;
+}
+#footer-youtube {
+  margin-right: 20px;
+}

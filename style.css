@@ -1,0 +1,550 @@
+/* CSS 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 가로 스크롤 제거 */
+body {
+    overflow-x: hidden;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 10;
+}
+
+/* Logo */
+header > h1 {
+    height: 70px;
+    text-align: center;
+}
+header > h1 > a img {
+    width: 200px;
+    height: auto;
+    padding: 15px 0 0 50px;
+}
+
+/* Main menu */
+.menu_wrap .dep1 {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 70px;
+}
+.menu_wrap .dep1 > li {
+    width:150px;
+    text-align: center;
+    vertical-align: top;
+}
+.menu_wrap .dep1 > li:hover {
+    font-weight: bold;
+    z-index: 10;
+}
+.menu_wrap .dep1 > li > a {
+    display: block;
+    color: #000E0E;
+}
+
+.menu_wrap .dep1 > li > a:hover {
+    background-color:#000E0E;
+    color: #fff;
+    transition: all 0.5s;
+}
+.menu_wrap .dep1 > li:hover > .dep2 {
+    display: block;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+.menu_wrap .dep1 > li:hover > .dep2 > li {
+    line-height: 20px;
+}
+.menu_wrap .dep1 > li:hover > .dep2 > li a {
+    color: #000E0E;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.menu_wrap .dep1 > li:hover .dep2 > li:hover a {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Sub menu */
+.menu_wrap .dep2 {
+    display: none;
+}
+.menu_wrap .dep2 li {
+    padding: 7px 0;
+}
+.dep2 li > a {
+    text-align: center;
+}
+
+/* Social */
+header .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .social > img {
+    width: 40px;
+    margin-right: 40px;
+}
+
+/*video*/
+main {
+    overflow-x: hidden;
+}
+main video {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+/* main menu */
+main .about-img {
+    position: relative;
+}
+main .about-img > img {
+    opacity: 0.3;
+    vertical-align: center;
+    width: 1707px;
+    height: 580px;
+    object-fit: cover;
+}
+main .about-img > .img-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+main .about-img > .img-text h2 {
+    font-size: 3em;
+    text-shadow: 5px 5px 5px #fff; 
+}
+
+.solution, .business-bg {
+    width: 100%;
+    height: 590px;
+    background-color: #EEEEEE;
+}
+#jk {
+    font-size: 3em;
+    font-weight: bold;
+    color: #0802FF;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#jk1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #000E0E;
+    margin-bottom: 80px;
+}
+
+/* About Flip Card */
+.about-flip {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.flip-card:hover {
+    cursor: pointer;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}.flip-card-front, .flip-card-back, .flip-card-back1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: rgba(250, 251, 252, 0.973);
+    color: black;
+    border-radius: 5px;
+}
+.flip-card-back {
+    background-color: #0E185F;
+    transform: rotateY(180deg);
+    padding-top: 15px;
+    border-radius: 5px;
+}
+.flip-card-back h2 > a {
+    color: white;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+}
+.flip-card-back p {
+    color: #fff;
+    padding-top: 25px;
+}
+/* About - Solution */
+.flip-card-back1 {
+    background-color: #05595B;
+    transform: rotateY(180deg);
+    padding-top: 15px;
+    border-radius: 5px;
+}
+.flip-card-back1 h2 > a {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+}
+.flip-card-back1 p {
+    color: #fff;
+    padding-top: 30px;
+}
+
+.parameter {
+    width: 300px;
+    height: 40px;
+    /* perspective: 1000px;
+    margin: 0 100px; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    /* border-radius: 5px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parameter:hover {
+    cursor: pointer;
+    background-color: green;
+}
+.parameter:hover a {
+    color: #fff;
+}
+
+/* About -Vision */
+.slogan {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+.slogan-img {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.vision {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.vision1 {
+    width: 500px;
+    height: 350px;
+    position: relative;
+}
+.vision1 > video {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.vision > h2 {
+    padding-top: 30px;
+    color: #BBBFCA;
+}
+.vision > p {
+    padding-top: 20px;
+}
+#best {
+    padding-top: 80px;
+    color: #3C5186;
+}
+.eng {
+    color: #BBBFCA;
+}
+
+/* Business partner */
+.business-partner {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 80px; */
+    /* text-align: center; */
+}
+.partner {
+    width: 400px;
+    height: 300px;
+    margin: 0 60px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.partner:hover {
+    cursor: pointer;
+}
+.partner-logo {
+    width: 400px;
+    height: 80px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    line-height: 80px;
+    border-radius: 5px 0;
+}
+.partner-logo > img {
+    vertical-align: center;
+}
+.partner-intro {
+    width: 400px;
+    height: 220px;
+    padding: 25px 25px 150px 25px;
+    text-align: center;
+    background-color: #0E185F;
+
+    border-radius: 0 0 5px 5px;
+}
+.partner-intro a > h3 {
+    color: gold;
+}
+.partner-intro a > p {
+    color: #fff;
+}
+.partner-intro > a > ul > li {
+    color: #BBBFCA ;
+}
+
+
+/* SRC */
+.src {
+    padding-bottom: 2rem;
+}
+.src-title {
+    color:#8D8DAA;
+    text-align: center;
+    padding: 1rem 0 1.5rem 0;
+}
+.src-content {
+    font-size: large;
+    width: 80%;
+    line-height: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
+.src-image1 > img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.src-image2 > img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.src-image3 > img {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.src-video {
+    display: block;
+    /* position: relative; */
+    width: 60%;
+    margin: 0 auto;
+}
+
+.src-hw {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.src-item > img {
+    width: 500px;
+    padding: 3rem;
+}
+.src-item-app > img {
+    width: 700px;
+    padding: 3rem;
+}
+.src-item-last > img {
+    width: 900px;
+    padding: 3rem;
+}
+
+/* software */
+/* roboshop pro card */
+.pro {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.pro-card {
+    background-color: transparent;
+    /* width: 500px;
+    height: 300px; */
+    /* perspective: 1000px; */
+    /* padding: 0 20px; */
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    border-radius: 5px;
+}
+.pro-text {
+    font-size: large;
+    text-align: center;
+}
+
+/* RDS */
+.rds {
+    width: 80%;
+    margin: 0 auto;
+}
+.rds-text {
+    font-size: larger;
+    text-align:center;
+    color:#8D8DAA;
+}
+.rds-text > h3 {
+    margin-bottom: 15px;
+}
+
+
+/* Contact */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color:#fff;
+    padding: 30px 50px;
+}
+.footer1 > h1 > a img {
+    width: 150px;
+    height: auto;
+    padding: 30px 0;
+}
+.footer1 > p {
+    color: black;
+    /* font-size: 1.2em; */
+    padding: 10px;
+}
+.footer1 > ul > li {
+    color: black;
+    font-size: 12px;
+}
+.footer1 > ul > li img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    overflow-x: hidden;
+}
+.footer-menu > div > p {
+    color: #8D8DAA;
+    width: 170px;
+    height: 20px;
+    /* font-size: 1.2em; */
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.robot {
+    display: block;
+    width: 170px;
+    text-align: center;
+    padding-top: 10px;
+    color: #D1D1D1;
+}
+.robot:hover {
+    color: purple;
+    font-weight: bold;
+    cursor: pointer;
+}
+.footer-social > a img {
+    width: 30px;
+    height: 30px;
+}
+.footer-social > a img:hover {
+    cursor: pointer;
+}
+#footer-youtube {
+    margin-right: 20px;
+}
